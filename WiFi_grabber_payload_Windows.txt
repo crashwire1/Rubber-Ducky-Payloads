@@ -1,6 +1,7 @@
 REM WiFi SSID/Password grabber for Windows 
 REM AUTHOR Crashwire
 REM DESCRIPTION: Uses Powershell to grab all SSIDs & Associated PSKs stored on the Windows machine. Pipes output to local file stored on Rubber Ducky
+REM **DO NOT USE FOR ILLEGAL PURPOSES**
 ATTACKMODE HID STORAGE
 DELAY 1000
 GUI r
