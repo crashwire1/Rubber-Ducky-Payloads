@@ -34,8 +34,7 @@ Clone the repo and start using the payloads:
 ```bash
 git clone https://github.com/yourusername/Rubber-Ducky-Payloads.git
 cd Rubber-Ducky-Payloads
-
-Use Hak5 Payload Studio to convert the .txt payload files to inject.bin.
+```
 
 ⚠️ Disclaimer
 USE CAUTION when implementing these payloads on any machine. They are intended for authorized security assessments and educational purposes only. The author is not responsible for any misuse or damage caused by these scripts.
