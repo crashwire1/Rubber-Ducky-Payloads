@@ -34,9 +34,6 @@ Clone the repo and start using the payloads:
 ```bash
 git clone https://github.com/crashwire1/Rubber-Ducky-Payloads.git
 ```
-```
-cd Rubber-Ducky-Payloads
-```
 
 ⚠️ Disclaimer
 USE CAUTION when implementing these payloads on any machine. They are intended for authorized security assessments and educational purposes only. The author is not responsible for any misuse or damage caused by these scripts.
