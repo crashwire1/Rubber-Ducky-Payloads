@@ -32,7 +32,7 @@ This repository contains **Hak5 Rubber Ducky Payloads** designed for a variety o
 Clone the repo and start using the payloads:
 
 ```bash
-git clone https://github.com/yourusername/Rubber-Ducky-Payloads.git
+git clone https://github.com/crashwire1/Rubber-Ducky-Payloads.git
 ```
 ```
 cd Rubber-Ducky-Payloads
