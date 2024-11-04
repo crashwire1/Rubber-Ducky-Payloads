@@ -1,5 +1,5 @@
 REM AUTHOR Crashwire
-REM Alternative method using Command Prompt to run PowerShell/.ps1 script in hidden window to grab WiFi SSIDs/Passwords *grabber_wifi.ps1 file REQUIRED*
+REM Alternative method using Command Prompt to run PowerShell/.ps1 script in hidden window to grab WiFi SSIDs/Passwords *grab_wifi.ps1 file REQUIRED*
 ATTACKMODE HID STORAGE
 DELAY 1000
 GUI r
