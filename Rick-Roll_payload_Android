@@ -1,0 +1,8 @@
+REM AUTHOR Crashwire
+REM DESCRIPTION Android Rick-Roll script *Android Phone must be unlocked and on HomePage*
+ATTACKMODE HID STORAGE
+DELAY 1000
+GUI r
+DELAY 250
+STRING https://www.dafk.net/what/
+ENTER
