@@ -1,0 +1,8 @@
+REM AUTHOR Crashwire
+REM DESCRIPTION Rick-Roll script *Works on both Windows and Android (Android Phone must be unlocked and on HomePage)*
+ATTACKMODE HID STORAGE
+DELAY 1000
+GUI r
+DELAY 250
+STRING https://www.dafk.net/what/
+ENTER
