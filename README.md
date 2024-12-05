@@ -28,6 +28,9 @@ This repository contains **Hak5 Rubber Ducky Payloads** designed for a variety o
 9. **`Disable_Windows_Defender_Payload.txt`** 🛡️
     A payload designed to disable Windows Defender, ensuring that security alerts and defenses are turned off. This payload allows for easier execution of other scripts or tools on the machine without interference from built-in security.
 
+10. **`Download&run_mimikatz.txt`**
+   A payload that downloads a remote version of mimikatz.exe, runs it, and outputs the captured credentials on to the Rubber Ducky's D: drive
+
 
 ---
 
