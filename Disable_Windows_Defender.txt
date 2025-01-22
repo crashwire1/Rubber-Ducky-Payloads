@@ -1,7 +1,7 @@
 REM AUTHOR Crashwire
 REM DESCRIPTION Disables Windows Defender real-time protection and prevents users from re-enabling protection through Defender UI (REQUIRES ADMIN RIGHTS)
 REM NOTE: USE WITH CAUTION 
-ATTACKMODE HID/STORAGE
+ATTACKMODE HID STORAGE
 DELAY 1000
 GUI r
 DELAY 200
