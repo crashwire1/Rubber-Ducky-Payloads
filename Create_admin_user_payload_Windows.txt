@@ -1,6 +1,6 @@
 REM AUTHOR Crashwire
 REM DESCRIPTION Creates a new admin user 'AdminUser' with password 'SecurePass123' (Change as desired)
-ATTACKMODE HID/STORAGE
+ATTACKMODE HID STORAGE
 DELAY 1000
 GUI r
 DELAY 200
