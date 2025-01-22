@@ -31,6 +31,12 @@ This repository contains **Hak5 Rubber Ducky Payloads** designed for a variety o
 10. **`Download&run_mimikatz.txt`**
    A payload that downloads a remote version of mimikatz.exe, runs it, and outputs the captured credentials on to the Rubber Ducky's D: drive
 
+11. **`Reverse_Shell_Payload_PowerShell.txt`** 🔁  
+   A payload that initiates a reverse shell connection back to the attacker's machine using PowerShell. This script provides a robust reverse shell for command execution remotely.
+
+12. **`Reverse_Shell_Payload_CMD.txt`** 🔁  
+   A lightweight payload that uses CMD and Telnet to create a reverse shell back to the attacker's machine. Ideal for quick and simple command-line access with minimal footprint.
+
 
 ---
 
