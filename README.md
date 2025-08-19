@@ -12,30 +12,27 @@ This repository contains **Hak5 Rubber Ducky Payloads** designed for a variety o
 1. **`Wifi_grabber_payload_Windows.txt`** 📶
    A payload designed for **Windows** to grab all WiFi SSIDs and passwords saved on the machine. Perfect for gathering network credentials quickly and discreetly.
 
-3. **`Run_LaZagne_Payload.txt`** 💻
-   A payload that downloads and executes **LaZagne.exe** on a Windows target. This script automates the process of running LaZagne, a tool for extracting credentials from various applications on a compromised    
+2. **`Run_LaZagne_Payload.txt`** 💻
+   A payload that executes **LaZagne.exe** on a Windows target and outputs password to a text file on the D: Drive. This script automates the process of running LaZagne, a tool for extracting credentials from various applications on a compromised    
    system.
 
-5. **`Wifi_grabber_payload_Windows2.txt & grab_wifi.ps1`** 📶
+3. **`Wifi_grabber_payload_Windows2.txt & grab_wifi.ps1`** 📶
    An optimized version of the previous Wifi Grabber payload. Utilizes a .ps1 script stored on the Rubber ducky in conjunction with a hidden powershell window.
 
-6. **`Rickroll_Payload.txt`** 🎶
+4. **`Rickroll_Payload.txt`** 🎶
    A fun payload that opens a web browser and navigates to a classic Rickroll page, causing a playful distraction for the user. Useful for light-hearted pranks.
 
-7. **`Create_Admin_User_Payload.txt`** 👤
+5. **`Create_Admin_User_Payload.txt`** 👤
    A payload that creates a hidden administrator user on a Windows machine. This enables stealthy access to the system by creating a new user with elevated privileges.
 
-9. **`Disable_Windows_Defender_Payload.txt`** 🛡️
+6. **`Disable_Windows_Defender_Payload.txt`** 🛡️
     A payload designed to disable Windows Defender, ensuring that security alerts and defenses are turned off. This payload allows for easier execution of other scripts or tools on the machine without interference from built-in security.
 
-10. **`Download&run_mimikatz.txt`**
-   A payload that downloads a remote version of mimikatz.exe, runs it, and outputs the captured credentials on to the Rubber Ducky's D: drive
+7. **`Download&run_mimikatz.txt`**
+   A payload that runs Mimikatz.exe on the usb, elevates to SYSTEM token, dumps the SAM table hashs, and outputs the captured credentials on to the Rubber Ducky's D: drive
 
-11. **`Reverse_Shell_Payload_PowerShell.txt`** 🔁  
+8. **`Reverse_Shell_Payload_PowerShell.txt`** 🔁  
    A payload that initiates a reverse shell connection back to the attacker's machine using PowerShell. This script provides a robust reverse shell for command execution remotely.
-
-12. **`Reverse_Shell_Payload_CMD.txt`** 🔁  
-   A lightweight payload that uses CMD and Telnet to create a reverse shell back to the attacker's machine. Ideal for quick and simple command-line access with minimal footprint.
 
 
 ---
